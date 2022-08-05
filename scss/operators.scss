@@ -1,0 +1,22 @@
+/* EXTEND */
+.background-grid{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin flex($flex-direction , $flex-wrap){
+    flex-direction: $flex-direction ;
+    flex-wrap: $flex-wrap ;
+}
+
+$titulos :(
+    h1:white,
+    h2:yellow,
+);
+@each $titulos , $color in titulos {
+    .colors-#{$titulos} {
+        background-color:#{$color};
+    }
+}
+

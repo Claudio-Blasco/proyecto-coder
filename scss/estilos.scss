@@ -1,6 +1,7 @@
+@import "operators";
 @import "variables";
 @import "footer";
-
+@import "mediaqueries";
 *{
     border: 0;
     margin: 0;
@@ -11,8 +12,7 @@
 }
 header{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @include flex (row,wrap);
     background-color: $color-principal;
     height: 100px;
     align-items: center;
@@ -40,14 +40,12 @@ nav a{
 }
 .h22{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @include flex (row,wrap);
     justify-content: center;
 }
 .produclass{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @include flex (row,wrap);
     margin-left: 0.7em;
     width: 260px;
     height:150px ;
@@ -103,8 +101,7 @@ a{
 }
 ul{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @include flex (row,wrap);
     justify-content: space-around;
     background-color: black;
     height: 70px;
@@ -121,8 +118,7 @@ form{
 }
 footer{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @include flex (row,wrap);
     width: 81.5em;
 }
 h2{
@@ -130,8 +126,7 @@ h2{
 }
 .maincontact{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @include flex (row,wrap);
     justify-content: space-around;
     height: 25em;
 }
@@ -161,51 +156,39 @@ h2{
     border-radius: 15px;
 }
 .pickawool{
+    @extend .background-grid;
     grid-area: pickawool;
     background-image: url(../recursos/pickawood-t7nJyxD4ERo-unsplash.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     border-radius: 15px;
 }
 .fotomueble{
+    @extend .background-grid;
     grid-area: fotomueble;
     background-image:url(../recursos/foto\mueble.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     border-radius: 15px;
 }
 .freepick{
+    @extend .background-grid;
     grid-area: freepick;
     background-image: url(https://img.freepik.com/foto-gratis/carpintero-experimentado-ropa-trabajo-propietario-pequena-empresa-que-trabaja-taller-carpinteria_116124-2124.jpg?w=900);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     border-radius: 15px;
 }
 .dominik{
+    @extend .background-grid;
     grid-area: dominik;
     background-image: url(../recursos/dominik-scythe-3cIvvzjE6Lk-unsplash.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     border-radius: 15px;
 }
 .erol{
+    @extend .background-grid;
     grid-area: erol;
     background-image:url(../recursos/erol-ahmed-glwcYTGzg4o-unsplash.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     border-radius: 15px;
 }
 .atoms{
+    @extend .background-grid;
     grid-area: atoms;
     background-image:url(../recursos/atoms-FkrRKdpAndI-unsplash.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     border-radius: 15px;
 }
 .main-img{
@@ -234,8 +217,7 @@ h2{
 }
 .h2card{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @include flex (row,wrap);
     justify-content: center;
 }
 .card1{
@@ -262,8 +244,7 @@ h2{
     grid-column: 2/8;
     grid-row: 3/4 ;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @include flex (row,wrap);
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -287,190 +268,3 @@ button{
         transform: scale(1.25,1.25);
     }
 }
-
-/* media querie de celular */
-@media (min-width:320px) and (max-width:575px ){
-    .novedades-grid{
-        height: auto;
-        grid-template-columns:1fr ;
-        grid-template-rows:repeat(7,1fr);
-        column-gap: 0px;
-        row-gap: 15px;
-        }
-        .img-principal{
-            grid-column:1/2;
-            grid-row:1/2;
-            height: 100%;
-            margin: 10px;
-        }
-        .card1{
-            grid-column:1/2 ;
-            grid-row:2/3 ;
-            margin: 10px;
-        }
-        .card2{
-            grid-column:1/2 ; 
-            grid-row: 3/4;
-            margin: 10px;
-        }
-        .card3{
-            grid-column: 1/2;
-            grid-row:4/5 ;
-            margin: 10px;
-        }
-        .card4{
-            grid-column:1/2 ;
-            grid-row: 5/6;
-            margin: 10px;
-        }
-        .card5{
-            grid-column:1/2 ;
-            grid-row: 6/7;
-            margin: 10px;
-        }
-        .boton{
-            grid-column: 1/2;
-            grid-row: 7/8 ; 
-            margin: 10px;
-        }
-        header{
-            display: inline-block;
-            background-color: $color-principal;
-            padding: 2em;
-            width: 100vw;
-        }
-        nav {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            background-color:rgb(255, 255, 255) ;
-            width:100vw;
-        }
-        
-        nav li {
-            
-            margin: 1em;
-            margin-left: 5em;
-            margin-right: 5em;
-            color: white;
-            width:100vw;
-        }
-        
-        nav ul {
-            list-style: none;
-        }
-        nav a{
-            text-decoration: none;
-        }
-        main{
-            background-color:$color-principal ;
-        }
-        ul{
-            display: flex;
-            flex-direction: column;
-            height: auto;
-            justify-content: space-around;
-            align-items: center;
-            background-color: black;
-        }
-}
-
-
-
-
-
-/* media querie de tablet */
-@media (min-width: 576px) and (max-width:992px) {
-    .novedades-grid{
-        height: auto;
-        grid-template-columns:1fr ;
-        grid-template-rows:repeat(7,1fr);
-        column-gap: 0px;
-        row-gap: 15px;
-        }
-        .img-principal{
-            grid-column:1/2;
-            grid-row:1/2;
-            height: 100%;
-            margin: 10px;
-        }
-        .card1{
-            grid-column:1/2 ;
-            grid-row:2/3 ;
-            margin: 10px;
-        }
-        .card2{
-            grid-column:1/2 ; 
-            grid-row: 3/4;
-            margin: 10px;
-        }
-        .card3{
-            grid-column: 1/2;
-            grid-row:4/5 ;
-            margin: 10px;
-        }
-        .card4{
-            grid-column:1/2 ;
-            grid-row: 5/6;
-            margin: 10px;
-        }
-        .card5{
-            grid-column:1/2 ;
-            grid-row: 6/7;
-            margin: 10px;
-        }
-        .boton{
-            grid-column: 1/2;
-            grid-row: 7/8 ; 
-            margin: 10px;
-        }
-        header{
-            display: inline-block;
-            background-color: $color-principal;
-            padding: 2em;
-            width: 100vw;
-        }
-        nav {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            background-color:rgb(255, 255, 255) ;
-            width:100vw;
-        }
-        
-        nav li {
-            
-            margin: 1em;
-            margin-left: 5em;
-            margin-right: 5em;
-            color: white;
-            width:100vw;
-        }
-        
-        nav ul {
-            list-style: none;
-        }
-        nav a{
-            text-decoration: none;
-        }
-        main{
-            background-color:$color-principal ;
-        }
-        ul{
-            display: flex;
-            flex-direction: column;
-            height: auto;
-            justify-content: space-around;
-            align-items: center;
-            background-color: black;
-        }
-        figure{
-            display:flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: center;
-            background-color:$color-principal;
-        }
-
-}  
