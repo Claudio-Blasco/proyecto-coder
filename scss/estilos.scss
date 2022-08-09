@@ -86,7 +86,8 @@ p{
     font-size:smaller;
 }
 figure{
-    display: inline-block;
+    display: flex;
+    @include flex(row,wrap);
     background-color:$color-principal;
 }
 div{

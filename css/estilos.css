@@ -244,7 +244,9 @@ p {
   font-size: smaller; }
 
 figure {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   background-color: #44474b; }
 
 div {
