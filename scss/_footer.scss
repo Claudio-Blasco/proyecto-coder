@@ -4,10 +4,23 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 0%;
-    background-image: linear-gradient(to bottom,rgb(68, 71, 75),white);
+    background-color: $color-principal;
     color: black;
     height: 12em;
     width: 32.8%;
     border: solid black 0.21em;
     margin: 0%;
+}
+footer figure img{
+    width: 60px;
+    height: 60px;
+}
+.figurefooter{
+    background-color: $color-principal;
+}
+.articlef h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
 }

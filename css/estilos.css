@@ -12,12 +12,25 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 0%;
-  background-image: linear-gradient(to bottom, #44474b, white);
+  background-color: #44474b;
   color: black;
   height: 12em;
   width: 32.8%;
   border: solid black 0.21em;
   margin: 0%; }
+
+footer figure img {
+  width: 60px;
+  height: 60px; }
+
+.figurefooter {
+  background-color: #44474b; }
+
+.articlef h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%; }
 
 @media (min-width: 320px) and (max-width: 575px) {
   .novedades-grid {
@@ -167,21 +180,23 @@
   padding: 0; }
 
 .indexh1 {
-  color: white; }
+  color: white;
+  font-family: 'Bebas Neue', cursive; }
 
 header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: #44474b;
-  height: 100px;
+  background-image: url(../recursos/joel-jasmin-forestbird-xzPMUMDDsfk-unsplash.jpg);
+  height: 150px;
   align-items: center;
   align-content: center;
   justify-content: center; }
 
 nav {
   background-color: white;
-  height: 4em; }
+  height: 4em;
+  font-family: 'Bebas Neue', cursive; }
 
 nav li {
   color: white; }
@@ -231,6 +246,11 @@ nav a {
 main {
   background-color: #44474b; }
 
+.sobrenostros {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
 article {
   background-color: #44474b;
   width: 30%;
@@ -240,20 +260,39 @@ article {
 
 p {
   color: white;
-  font-family: 'Kdam Thmor Pro', sans-serif;
-  font-size: smaller; }
+  font-family: 'Bebas Neue', cursive;
+  font-size: smaller;
+  width: 100%; }
+
+.imgsbrnos {
+  width: 450px;
+  height: 600px; }
+
+.sobreart {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 40%;
+  margin-left: 9em;
+  margin-top: 3em; }
+
+.sobreart h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
 figure {
+  background-color: #44474b;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: #44474b; }
+  align-items: flex-start; }
 
 div {
   color: aliceblue; }
 
 h1 {
-  color: #fdf908; }
+  color: white; }
 
 a {
   font-size: larger;
@@ -323,7 +362,7 @@ h2 {
 
 .fotomueble {
   grid-area: fotomueble;
-  background-image: url(../recursos/foto\mueble.jpg);
+  background-image: url(../recursos/joel-jasmin-forestbird-xzPMUMDDsfk-unsplash.jpg);
   border-radius: 15px; }
 
 .freepick {
@@ -410,7 +449,8 @@ h2 {
   border-radius: 15px;
   border: solid black;
   width: 92%;
-  margin-left: 1em; }
+  margin-left: 1em;
+  font-family: 'Bebas Neue', cursive; }
 
 button {
   width: 300px;

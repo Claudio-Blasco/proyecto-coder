@@ -9,12 +9,13 @@
 }
 .indexh1{
     color: white;
+    font-family: 'Bebas Neue', cursive;
 }
 header{
     display: flex;
     @include flex (row,wrap);
-    background-color: $color-principal;
-    height: 100px;
+    background-image: url(../recursos/joel-jasmin-forestbird-xzPMUMDDsfk-unsplash.jpg);
+    height: 150px;
     align-items: center;
     align-content: center;
     justify-content: center;
@@ -22,10 +23,11 @@ header{
 nav {
     background-color:rgb(255, 255, 255) ;
     height: 4em;
+    font-family: 'Bebas Neue', cursive;
 }
 
 nav li {
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 nav ul {
@@ -73,6 +75,11 @@ nav a{
 main{
     background-color:$color-principal ;
 }
+.sobrenostros{
+    display: flex;
+    @include flex (row,wrap);
+
+}
 article{
     background-color:$color-principal;
     width: 30%;
@@ -82,19 +89,38 @@ article{
 }
 p{
     color: white;
-    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: 'Bebas Neue', cursive;
     font-size:smaller;
+    width: 100%;
+}
+.imgsbrnos{
+    width: 450px;
+    height: 600px;
+}
+.sobreart{
+    display: flex;
+    @include flex (column,wrap);
+    width: 40%;
+    margin-left: 9em;
+    margin-top: 3em;
+}
+.sobreart h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
 }
 figure{
-    display: flex;
-    @include flex(row,wrap);
     background-color:$color-principal;
+    display: flex;
+    @include flex (row,wrap);
+    align-items: flex-start;
 }
 div{
     color: aliceblue;
 }
 h1{
-    color: rgb(253, 249, 8);
+    color: rgb(255, 255, 255);
 }
 a{
     font-size: larger;
@@ -124,6 +150,7 @@ footer{
 }
 h2{
     margin-top: 0%;
+
 }
 .maincontact{
     display: flex;
@@ -165,7 +192,7 @@ h2{
 .fotomueble{
     @extend .background-grid;
     grid-area: fotomueble;
-    background-image:url(../recursos/foto\mueble.jpg);
+    background-image:url(../recursos/joel-jasmin-forestbird-xzPMUMDDsfk-unsplash.jpg);
     border-radius: 15px;
 }
 .freepick{
@@ -255,6 +282,7 @@ h2{
     border: solid black;
     width: 92%;
     margin-left: 1em;
+    font-family: 'Bebas Neue', cursive;
 }
 button{
     width: 300px;
