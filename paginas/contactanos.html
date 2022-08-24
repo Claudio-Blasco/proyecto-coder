@@ -26,24 +26,22 @@
                 <li><a href="../paginas/productos.html">Productos</a></li>
             </ul>
         </nav>
-    <main class="maincontact">
-        <form method="post">
-            <div>
-                <label>nombre</label>
-                <input>
+    <main>
+        <form class="forms">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Direccion de Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Nunca compartiremos tu informacion con nadie.</div>
             </div>
-            <div>
-                <label>Email</label><!-- obtener info del usuario en una sola linea -->
-                <input>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Dejanos un Mensaje</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
             </div>
-            <div>
-                </label>deja tu comentario</label>
-                <textarea ></textarea><!-- informacion que amerita mas de una linea nunca info sensible -->
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">No soy un Robot</label>
             </div>
-            <div>
-                <input type="submit" value="enviar formulario">
-                <input type="reset" value="borrar formulario">
-            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
     </main>
     <footer>
