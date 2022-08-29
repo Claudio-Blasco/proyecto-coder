@@ -40,12 +40,17 @@
         .boton{
             grid-column: 1/2;
             grid-row: 7/8 ; 
-            margin: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
         }
         header{
-            display: inline-block;
+            display: flex;
+            flex-direction: row;
             background-color: $color-principal;
-            padding: 2em;
             width: 100vw;
         }
         nav {
@@ -53,9 +58,9 @@
             flex-direction: column;
             flex-wrap: wrap;
             background-color:rgb(255, 255, 255) ;
-            width:100vw;
+            background-color: black;
+            height: 60%;
         }
-        
         nav li {
             
             margin: 1em;
@@ -64,24 +69,101 @@
             color: white;
             width:100vw;
         }
-        
-        nav ul {
-            list-style: none;
-        }
         nav a{
             text-decoration: none;
         }
-        main{
-            background-color:$color-principal ;
-        }
-        ul{
+        nav ul{
             display: flex;
             flex-direction: column;
-            height: auto;
-            justify-content: space-around;
+            height: 60%;
+            width: 100vw;
             align-items: center;
             background-color: black;
         }
+        .articlef{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 0%;
+            background-color: $color-principal;
+            color: black;
+            width: 100%;
+            border: solid black 0.21em;
+            margin: 0%;
+        }
+        .footersc{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 0%;
+            background-color: $color-principal;
+            color: black;
+            width: 100%;
+            border: solid black 0.21em;
+            margin: 0%;
+        }
+        .pickawood{
+            width: 200px;
+            height: 200px;
+            margin-left:3em;
+            margin-right: 0.5em;
+            margin-bottom: 1em;
+            margin-top: 1em;
+            border-radius: 20px;
+            border: solid white;
+        
+        }
+        figure{
+            display:flex;
+            flex-direction: row;  
+            justify-content: center;
+            align-items: center;              
+            flex-wrap: wrap;
+            width: 100%;
+            }
+            .forms {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap; }
+            .main-contactanos{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 100vw;
+            }
+            .header-pro{
+                width: 100%;
+            }
+            .imgsbrnos{
+                width: 100vw;
+                height: 200px;
+            }
+            .sobrenosotros{
+                width: 100vw;
+                background-color: $color-principal;
+            }
+            .sobreart{
+                width: 100vw;
+                background-color: $color-principal;
+                margin: 0%;
+            }
+            .sobreart p{
+                font-size: medium;
+            }
+            .botonfooter{
+                background-color:black ;
+                border-radius: 15px;
+            }
+            .botonfooter a{
+                color: red;
+                font-family: 'Bebas Neue', cursive;
+                font-size: xx-large;
+            }
 }
 
 
@@ -128,15 +210,26 @@
             grid-row: 6/7;
             margin: 10px;
         }
+        .card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         .boton{
             grid-column: 1/2;
             grid-row: 7/8 ; 
-            margin: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
         }
         header{
-            display: inline-block;
+            display: flex;
+            flex-direction: row;
             background-color: $color-principal;
-            padding: 2em;
             width: 100vw;
         }
         nav {
@@ -144,9 +237,9 @@
             flex-direction: column;
             flex-wrap: wrap;
             background-color:rgb(255, 255, 255) ;
-            width:100vw;
+            background-color: black;
+            height: 60%;
         }
-        
         nav li {
             
             margin: 1em;
@@ -155,31 +248,105 @@
             color: white;
             width:100vw;
         }
-        
-        nav ul {
-            list-style: none;
-        }
         nav a{
             text-decoration: none;
         }
-        main{
-            background-color:$color-principal ;
-        }
-        ul{
+        nav ul{
             display: flex;
             flex-direction: column;
-            height: auto;
-            justify-content: space-around;
+            height: 60%;
+            width: 100vw;
             align-items: center;
             background-color: black;
         }
+        .articlef{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 0%;
+            background-color: $color-principal;
+            color: black;
+            width: 99%;
+            border: solid black 0.21em;
+            margin: 0%;
+        }
+        footer{
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+        }
+        .footersc{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 0%;
+            background-color: $color-principal;
+            color: black;
+            width: 100%;
+            border: solid black 0.21em;
+            margin: 0%;
+        }
+        .pickawood{
+            width: 200px;
+            height: 200px;
+            margin-left:3em;
+            margin-right: 0.5em;
+            margin-bottom: 1em;
+            margin-top: 1em;
+            border-radius: 20px;
+            border: solid white;
+        
+        }
         figure{
             display:flex;
-            flex-direction: column;
+            flex-direction: row;  
+            justify-content: center;
+            align-items: center;              
             flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: center;
-            background-color:$color-principal;
-        }
+            width: 100%;
+            }
+            .forms {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap; }
+            .main-contactanos{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 100vw;
+            }
+            .header-pro{
+                width: 100%;
+            }
+            .imgsbrnos{
+                width: 100vw;
+                height: 200px;
+            }
+            .sobrenosotros{
+                width: 100vw;
+                background-color: $color-principal;
+            }
+            .sobreart{
+                width: 100vw;
+                background-color: $color-principal;
+                margin: 0%;
+            }
+            .sobreart p{
+                font-size: medium;
+            }
+            .botonfooter{
+                background-color:black ;
+                border-radius: 15px;
+            }
+            .botonfooter a{
+                color: red;
+                font-family: 'Bebas Neue', cursive;
+                font-size: xx-large;
+            }
 
-}  
+}

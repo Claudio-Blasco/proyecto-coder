@@ -1,7 +1,6 @@
 @import "operators";
 @import "variables";
 @import "footer";
-@import "mediaqueries";
 *{
     border: 0;
     margin: 0;
@@ -79,7 +78,7 @@ main{
     display: flex;
     @include flex (row,wrap);
     background-color: $color-principal;
-
+    margin: 0%;
 }
 article{
     background-color:$color-principal;
@@ -152,6 +151,7 @@ footer{
 }
 h2{
     margin-top: 0%;
+    font-family:'Bebas Neue', cursive; 
 }
 .maincontact{
     display: flex;
@@ -299,3 +299,13 @@ button{
         transform: scale(1.25,1.25);
     }
 }
+.botonfooter{
+    background-color:black ;
+    border-radius: 15px;
+}
+.botonfooter a{
+    color: red;
+    font-family: 'Bebas Neue', cursive;
+    font-size: xx-large;
+}
+@import "mediaqueries";

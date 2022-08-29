@@ -15,6 +15,7 @@ footer figure img{
     width: 60px;
     height: 60px;
 }
+
 .figurefooter{
     background-color: $color-principal;
 }
@@ -23,4 +24,27 @@ footer figure img{
     flex-direction: row;
     justify-content: center;
     width: 100%;
+    font-size: large;
+    color: white;
+}
+.footersc{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0%;
+    background-color: $color-principal;
+    color: black;
+    height: 12em;
+    width: 33.3%;
+    border: solid black 0.21em;
+    margin: 0%;
+}
+.footersc h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    font-size: large;
+    color: white;
 }
